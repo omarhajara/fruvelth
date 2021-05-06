@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+$primary-color: #4ba4ca;
+
+%shared-properties-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+@mixin container($height, $width, $property, $top, $bottom) {
+    height: $height;
+    width: $width;
+    position: $property;
+    top: $top;
+    bottom: $bottom;
+}
+
+
+
+
+.sign-in {
+    min-height: 100vh;
+    width: 100%;
+    // margin: 0;
+    text-align: center; 
+
+    
+    .container {
+        background-color: #4BA4CA;
+        @extend %shared-properties-container;
+        @include container(290px, 65%, relative, 130px, 0);
+        @media screen and (min-width: 850px) {
+                @include container(290px, 35%, relative, 130px, 0);
+        }
+        form {
+            ::placeholder { 
+                color: #9799A1;
+                padding-left: 0px;
+              }
+
+            .input-field {
+                padding-top: 10px;
+                input[type="text"] {
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                }
+                input[type="password"] {
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                }
+                input {
+                    width: 80%;
+                    height: 30px;
+                    border-radius: 25px;
+                    border: 1px solid #d4d4d4;
+                }
+                #password {
+                    position: relative;
+                    left: 8px;
+                }
+                img {
+                    position: relative;
+                    right: 20px;
+                }
+            }
+            .submit {
+                padding-top: 10px;
+                input {
+                    width: 83%;
+                    height: 33px;
+                    border-radius: 25px;
+                    border: 1px solid #4ba4ca;
+                    color: #fff;
+                    background-color: #0F31E6;
+                } 
+            }
+        }
+        .p-one {
+            color: #341919;
+        }
+        p {
+            font-size: 10px;
+            color: #000000;
+            margin-top: 5px;
+
+            .last-child {
+                color: #0F31E6;
+                font-weight: bolder;
+            }
+        }
+
+    }
+}
+
+.sign-in-up-header {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+%text-center {
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        @include container(290px, 5%, relative, 130px, 0);
+    }
+}

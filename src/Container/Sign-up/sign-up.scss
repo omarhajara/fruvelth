@@ -1,0 +1,104 @@
+@import '../Sign-in/sign-in.scss';
+
+
+
+.sign-up {
+    min-height: 100vh;
+    width: 100%;
+    // margin: 0;
+    text-align: center; 
+
+    
+    .container {
+        background-color: #4BA4CA;
+        @extend %shared-properties-container;
+        @include container(350px, 65%, relative, 130px, 0);
+        @media screen and (min-width: 850px) {
+                @include container(350px, 35%, relative, 130px, 0);
+        }
+        form {
+            ::placeholder { 
+                color: #9799A1;
+                padding-left: 0px;
+              }
+
+            .input-field {
+                padding-top: 10px;
+                input[type="text"] {
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                }
+                input[type="password"] {
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                }
+                input[type="email"] {
+                    box-sizing: border-box;
+                    padding-left: 15px;
+                }
+                input {
+                    width: 80%;
+                    height: 30px;
+                    border-radius: 25px;
+                    border: 1px solid #d4d4d4;
+                }
+                #password {
+                    position: relative;
+                    left: 8px;
+                }
+                img {
+                    position: relative;
+                    right: 20px;
+                }
+            }
+            .submit {
+                padding-top: 10px;
+                input {
+                    width: 83%;
+                    height: 33px;
+                    border-radius: 25px;
+                    border: 1px solid #4ba4ca;
+                    color: rgba(255, 255, 255, 0.808);
+                    background-color: #0F31E6;
+                } 
+                input:hover {
+                    color: #fff;
+                    background-color: rgba(15, 47, 230, 0.288);
+                } 
+            }
+        }
+        .p-one {
+            color: #341919;
+        }
+        p {
+            font-size: 10px;
+            color: #000000;
+            margin-top: 5px;
+
+            .last-child {
+                color: #0F31E6;
+                font-weight: bolder;
+            }
+        }
+
+    }
+}
+
+.sign-in-up-header {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+%text-center {
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    .container {
+        @include container(290px, 5%, relative, 130px, 0);
+    }
+}

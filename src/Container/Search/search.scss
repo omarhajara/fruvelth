@@ -1,0 +1,25 @@
+.search {
+    width: 90%;
+    margin: 0 auto;
+    input {
+        width: 60%;
+        height: 3rem;
+        border: 1px solid #4ba4ca;
+        border-radius: 8px;
+    }
+    ::placeholder { 
+        color: #000;
+        padding-left: 0px;
+        font-size: 12px;
+    }
+    input[type="text"] {
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+    img {
+        width: 25px;
+        position: relative;
+        right: 10%;
+        top: 5px;
+    }
+}
