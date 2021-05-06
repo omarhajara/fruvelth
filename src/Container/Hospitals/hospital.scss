@@ -1,0 +1,187 @@
+@import '../Sign-in/sign-in.scss';
+
+.hospital-list {
+    @extend %shared-properties-container;
+    @include container(auto, 92%, relative, 0, 0);
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    .hospital-img {
+        // width: 100%;
+        img {
+            width: 130%;
+            height: 112%;
+            border-radius: 5px;
+        }
+    }
+    .hospital-text {
+        margin: 2% 0;
+        margin-left: 13%;
+        
+        h2 {
+            font-size: 20px;
+            color: #44BFF3;
+        }
+        p {
+            color: rgba(0, 0, 0, 0.62);
+            font-size: 14px;
+            line-height: 15px;
+            margin-top: 5px;
+        }
+        h3 {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 5px;
+            background-color: #3281A4;
+            color: #fff;
+            width: 100px;
+            height: 30px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            font-size: 10px;
+            // position: relative;
+            // bottom: 5px;
+        }
+    }
+    @media screen and (max-width: 420px) {
+        display: block; 
+        .hospital-img {
+            // width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+        .hospital-text {
+            margin: 2% 5%;
+            button {
+                width: 120px;
+                height: 30px;
+            }
+        } 
+    }
+}
+@media screen and (min-width: 780px) {
+    .hospitals {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hospital-list {
+        display: block; 
+        width: 350px;
+        margin: 20px;
+
+        .hospital-img {
+            // width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+        .hospital-text {
+            margin: 2% 5%;
+            button {
+                width: 120px;
+                height: 30px;
+            }
+        } 
+    }
+}
+    .hospital {
+    .h3{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hospitals {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hospital-list {
+        display: block; 
+        width: 400px;
+        margin: 20px;
+
+        .hospital-img {
+            // width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+        .hospital-text {
+            margin: 2% 5%;
+            button {
+                width: 120px;
+                height: 30px;
+            }
+        } 
+    }
+} 
+
+@media screen and (min-width: 1050px) {
+    .hospitals {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hospital-list {
+        display: block; 
+        width: 300px;
+        margin: 20px;
+
+        .hospital-img {
+            // width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+        .hospital-text {
+            margin: 2% 5%;
+            button {
+                width: 120px;
+                height: 30px;
+            }
+        } 
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .hospitals {
+        display: flex;
+        flex-wrap: wrap;
+        .h3{
+            font-size: 20px;
+            margin-left: 40px;
+        }
+    }
+    .hospital-list {
+        display: block; 
+        width: 290px;
+        margin: 20px;
+
+        .hospital-img {
+            // width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+        }
+        .hospital-text {
+            margin: 2% 5%;
+            button {
+                width: 120px;
+                height: 30px;
+            }
+        } 
+    }
+}

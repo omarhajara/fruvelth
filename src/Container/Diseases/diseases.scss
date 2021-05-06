@@ -1,0 +1,61 @@
+.disease-card {
+    display: inline;
+    flex-wrap: wrap;
+    button {
+        background: #fff;
+        border: 1px solid #4ba4ca;
+        height: auto;
+        border-radius: 5px;
+        color: #4ba4ca;
+        margin: 5px;
+        font-size: 16px;
+        padding: 3px;
+    }
+    @media screen and (max-width: 490px) {
+        button {
+            width: 45%;   
+        }
+    }
+    @media screen and (max-width: 270px) {
+        button {
+            width: 83%;
+            margin: 5px 7%;
+        }
+    }
+    @media screen and (min-width: 491px) {
+        button {
+            width: 30%;           
+        }
+    }
+    @media screen and (min-width: 700px) {
+        button {
+            width: 23%;
+        }
+    }
+    @media screen and (min-width: 901px) {
+        button {
+            background: #fff;
+            border: 1px solid #4ba4ca;
+            width: 18%;
+            height: auto;
+            border-radius: 5px;
+            color: #4ba4ca;
+            margin: 5px;
+            font-size: 16px;
+        }
+    }
+}
+
+.d-list {
+    width: 95%;
+    margin: 5% auto;
+    .scroll {
+        height: 24vh;
+        overflow: scroll;
+    }
+    
+    h3 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+}

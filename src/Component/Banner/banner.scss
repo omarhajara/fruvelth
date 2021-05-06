@@ -1,0 +1,24 @@
+.banner {
+    margin-bottom: 10px;
+    .banner-img {
+        img {
+            width: 100%;
+            z-index: -111;
+        }
+    }
+    .banner-text {
+        margin-top: 20px;
+        margin-left: 20px;
+        h1 {
+            font-size: 25px;
+            color: #4BA4CA;
+        }
+        p {
+            line-height: 15px;
+            // margin-top: -10px;
+            width: 80%;
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.62);
+        }
+    }
+}
