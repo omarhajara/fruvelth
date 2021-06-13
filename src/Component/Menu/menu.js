@@ -16,9 +16,9 @@ const Menu = ({ handleClose, show }) => {
                         <img src={Close}  onClick={handleClose}/>
                     </div>
                     <ul>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
+                        <li onClick={handleClose}>Home</li>
+                        <li onClick={handleClose}>About Us</li>
+                        <li onClick={handleClose}>Contact Us</li>
                     </ul>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import './sign-in.scss';
 import Vector from '../../Assets/Vector.png'
 
@@ -38,9 +38,9 @@ class SignIn extends React.Component{
                             <img src={Vector} alt="" />
                         </div>
                         <div className="submit">
-                            <a href="#">
-                            <input type="submit" name="submit" value="Login" />
-                            </a>
+                            <Link to="/body">
+                                <input type="submit" name="submit" value="Login" />
+                            </Link>
                         </div>
                         </form>
                         <p className="text-center p-one">
@@ -48,9 +48,9 @@ class SignIn extends React.Component{
                         </p>
                         <p className="text-center">
                         Don’t have an account?{" "}
-                        <a href="#" className="last-child">
+                        <Link to="/sign-up" className="last-child">
                             Create an account
-                        </a>
+                        </Link>
                         </p>
                     </div>
                 </div>

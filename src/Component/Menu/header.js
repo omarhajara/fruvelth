@@ -20,7 +20,7 @@ class Header extends Component {
     render() {
         return (
            <div className='header'>
-                    <Menu show={this.state.show} handleClose={this.hideMenu}/>
+                <Menu show={this.state.show} handleClose={this.hideMenu}/>
                 <div className='header-container'>
                     <div className='menu-icon'>
                         <img src={MenuIcon} onClick={this.showMenu}/>
@@ -28,8 +28,17 @@ class Header extends Component {
                     <div className='menu-text'>
                         <h2>s<span>H</span>ospital</h2>
                     </div>
-                    <div className='menu-text'>
+                    <div className='ntn'>
                         {/* <img src={Search}/> */}
+                       
+                    </div>
+                    <div className='menu-links'>
+                        {/* <img src={Search}/> */}
+                        <ul>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                        </ul>
                     </div>
                 </div>
            </div>

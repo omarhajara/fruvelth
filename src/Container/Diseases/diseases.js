@@ -1,10 +1,13 @@
 import React from 'react';
 import './diseases.scss';
+import {Link} from 'react-router-dom';
+import {useState} from 'react';
 
-
-const Disease = ({title, id, onDiseaseSelect}) => (
+const Disease = ({title}) => (
     <div className='disease-card'>
-        <button onClick={() => onDiseaseSelect(id)}>{title}</button>
+        <Link to="d-details">
+            <button>{title}</button>
+        </Link>
     </div>
 );
 

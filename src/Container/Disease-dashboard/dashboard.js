@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import DiseaseList from '../Diseases/disease-list'
 import Search from '../Search/search';
-// import DiseaseDetail from '../Diseases/disease-details';
+import DiseaseDetail from '../Diseases/disease-details';
 import HospitalList from '../Hospitals/hospital-list'
 
 
 class Dashboard extends Component {
-    state = { diseases: [], selectedDisease: null }
     constructor(props) {
         super(props);
 
@@ -19,10 +18,7 @@ class Dashboard extends Component {
         this.setState({ searchInput: event.target.value});
     };
 
-    onDiseaseSelect = (id) => {
-        this.setState({selectedDisease: id});
-    }
-
+   
 
     render() {
         const filterdResult = illness.filter((disease) =>
@@ -31,8 +27,7 @@ class Dashboard extends Component {
         return (
             <div>
                 <Search setInput= {this.setInput} />
-                <DiseaseList illness={this.state.diseases} illness={filterdResult} onDiseaseSelect={this.onDiseaseSelect} />
-                {/* <DiseaseDetail disease={this.state.diseases} selectedDisease={this.state.selectedDisease} /> */}
+                <DiseaseList illness={filterdResult} />
                 <HospitalList hospitals={hospitals}/>
 
             </div>
