@@ -7,11 +7,11 @@ class CarouselImg extends React.Component {
   render() {
     return (
       <Carousel>
-          <img src={Img1}/>
-          <img src={Img1}/>
-          <img src={Img1}/>
-          <img src={Img1}/>
-          <img src={Img1}/>
+        <img src={Img1} />
+        <img src={Img1} />
+        <img src={Img1} />
+        <img src={Img1} />
+        <img src={Img1} />
       </Carousel>
     );
   }
