@@ -45,19 +45,18 @@
   .display-none {
     display: none;
   }
-
+  .menu-container {
+      position: fixed;
+  }
   .menu {
-    position: relative;
-    top: 5%;
+    position: fixed;
+    top: 0;
     left: 0;
     width:30%;
     height: 235px;
     background: rgba(0, 0, 0, 0.90);
     z-index: 2;
-    .menu-container {
-        // width: 90%;
-        // margin: 200px auto;
-    }
+    
     .close {
         float: right;
         // margin: 10px;
@@ -75,3 +74,35 @@
 
   }
   .w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+  @media screen and (max-width: 900px) {
+    .menu-links {
+        display: none;
+    }
+
+  }
+  @media screen and (min-width: 901px) {
+    .menu-icon{
+        display: none;
+    }
+    .ntn {
+        display: none;
+    }
+    .menu-text h2 {
+        color: #3281A4;
+        font-size: 28px;
+        margin-left: 50%;
+        span {
+            color: #000000;
+        }
+    }
+    .menu-links {
+        margin-top: 10px;
+        ul li{
+            display: inline;
+            padding-left: 40px;
+            color: #3281A4;
+            font-size: 18px;
+        }
+    }
+  }

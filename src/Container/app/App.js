@@ -1,21 +1,25 @@
 import React from "react";
 import './App.scss';
+import {Switch, Route } from 'react-router-dom';
+import Home from '../../Component/Home/home'
 import SignIn from "../Sign-in/sign-in";
 import SignUp from "../Sign-up/sign-up";
-import Menu from '../../Component/Menu/menu';
 import Header from "../../Component/Menu/header";
-import Banner from "../../Component/Banner/banner";
 import Body from "../Body/body";
+import DiseaseDetail from "../Diseases/disease-details";
 
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* <SignIn/> */}
-        {/* <SignUp/> */}
-        <Header/>
-        <Body/>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/sign-in" component={SignIn}/>
+          <Route exact path="/sign-up" component={SignUp}/>
+          <Route exact path="/body" component={Body}/>
+          <Route exact path="/d-details" component={DiseaseDetail}/>
+        </Switch>
       </div>
     );
   }

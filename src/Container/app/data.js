@@ -1,36 +1,3 @@
-import React from 'react';
-import './diseases.scss';
-import HospitalList from '../Hospitals/hospital-list';
-import Img from '../../Assets/img1.png';
-import Diabetes from '../../Assets/diabetes.png';
-
-
-// import '../Disease-dashboard/illness';
-
-const DiseaseDetail = () => {
-    return (
-        <div>
-            <div className='disease-detail'>
-                <div className='top-detail'>
-                    <div className='d-icon'>
-                        <img src={Diabetes} />
-                    </div>
-                    <div className='d-text'>
-                        <h2>Diabetes</h2>
-                        <p>vv we are spec in so so so  we are specialize in so so so we are specialize in so so so we are specialize in so so so  we are specialio so so specialize in so so 
-                            we are specialize</p>
-                    </div>
-                </div>
-                <div className='h-scroll'>
-                    <HospitalList hospitals={hospitals}/>
-                </div>
-            </div>
-        </div>
-    );
-}
-
-export default DiseaseDetail;
-
 
 var hospitals = [
     {
@@ -92,5 +59,85 @@ var hospitals = [
         Email: "uucancer@gmail.com",
         Website: "www.cancerins.com",
         contact: "090100psoikas"
+    },
+    {
+        id: 6,
+        name: "Cancer Institute",
+        description: "we are specialize in so so so we are specialize in so so s we are specialize in so so so",
+        diseases: [
+
+        ],
+        Location: "Lagos Nigeria",
+        Email: "uucancer@gmail.com",
+        Website: "www.cancerins.com",
+        contact: "090100psoikas"
+    },
+    {
+        id: 7,
+        name: "Cancer Institute",
+        description: "we are specialize in so so so we are specialize in so so s we are specialize in so so so",
+        diseases: [
+
+        ],
+        Location: "Lagos Nigeria",
+        Email: "uucancer@gmail.com",
+        Website: "www.cancerins.com",
+        contact: "090100psoikas"
+    }
+]
+
+
+var illness = [
+    {
+        id : 1,
+        title : "Diabetes"
+    },
+    {
+        id : 2,
+        title : "Cholera"
+    },
+    {
+        id : 3,
+        title : "Tuberculosis."
+    },
+    {
+        id : 4,
+        title : "Stroke"
+    },
+    {
+        id : 5,
+        title : "Cirrhosis"
+    },
+    {
+        id : 6,
+        title : "HIV/AIDS"
+    },
+    {
+        id : 7,
+        title : "Diabetes"
+    },
+    {
+        id : 8,
+        title : "Diabetes"
+    },
+    {
+        id : 9,
+        title : "Diabetes"
+    },
+    {
+        id : 10,
+        title : "Diabetes"
+    },
+    {
+        id : 11,
+        title : "Diabetes"
+    },
+    {
+        id : 12,
+        title : "Diabetes"
+    },
+    {
+        id : 13,
+        title : "Diabetes"
     }
 ]

@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import './sign-up.scss';
 import Vector from '../../Assets/Vector.png'
 
@@ -54,16 +54,16 @@ class SignUp extends React.Component{
                                 <img src={Vector} alt="" />
                             </div>
                             <div className="submit">
-                                <a href="#">
+                                <Link to="/sign-in">
                                 <input type="submit" name="submit" value="Register" />
-                                </a>
+                                </Link>
                             </div>
                         </form>
                         <p className="text-center">
                         Already have an account?{" "}
-                        <a href="#" className="last-child">
+                        <Link to="/sign-in" className="last-child">
                             Sign In here
-                        </a>
+                        </Link>
                         </p>
                     </div>
                 </div>

@@ -4,13 +4,13 @@ import Diseases from './diseases';
 
 
 
-const DiseaseList = ({illness, onDiseaseSelect}) => (
+const DiseaseList = ({illness}) => (
     <div className='d-list'>
         <h3>Top Searched Diseases...</h3>
         <div className='scroll'>
         {
             illness.map(disease => (
-                <Diseases key={disease.id} title={disease.title} onDiseaseSelect={onDiseaseSelect}/>
+                <Diseases key={disease.id} title={disease.title} />
             ))
         }
         </div>
