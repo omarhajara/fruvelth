@@ -13,16 +13,16 @@ const DiseaseDetail = () => {
             <div className='disease-detail'>
                 <div className='top-detail'>
                     <div className='d-icon'>
-                        <img src={Diabetes} />
+                        <img src={Diabetes} alt='...' />
                     </div>
                     <div className='d-text'>
                         <h2>Diabetes</h2>
-                        <p>vv we are spec in so so so  we are specialize in so so so we are specialize in so so so we are specialize in so so so  we are specialio so so specialize in so so 
+                        <p>vv we are spec in so so so  we are specialize in so so so we are specialize in so so so we are specialize in so so so  we are specialio so so specialize in so so
                             we are specialize</p>
                     </div>
                 </div>
                 <div className='h-scroll'>
-                    <HospitalList hospitals={hospitals}/>
+                    <HospitalList hospitals={hospitals} />
                 </div>
             </div>
         </div>
