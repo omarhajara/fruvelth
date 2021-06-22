@@ -7,16 +7,16 @@ import Diabetes from '../../Assets/diabetes.png';
 
 // import '../Disease-dashboard/illness';
 
-const DiseaseDetail = () => {
+const DiseaseDetail = ({id, title}) => {
     return (
-        <div>
+        <div key={id}>
             <div className='disease-detail'>
                 <div className='top-detail'>
                     <div className='d-icon'>
                         <img src={Diabetes} alt='...' />
                     </div>
                     <div className='d-text'>
-                        <h2>Diabetes</h2>
+                        <h2>{title}</h2>
                         <p>vv we are spec in so so so  we are specialize in so so so we are specialize in so so so we are specialize in so so so  we are specialio so so specialize in so so
                             we are specialize</p>
                     </div>

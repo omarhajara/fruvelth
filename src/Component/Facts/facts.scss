@@ -1,0 +1,52 @@
+.fact {
+    margin-top: 50px;
+    .fact-header {
+        h2 {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.62);
+        }
+    }
+    .fact-text {
+        // height: 40vh;
+        // background-image: url(../../Assets/bg1.png);
+        background-color: #4babca;
+        width: 100%;
+        p {
+            text-align: left;
+            width: 70%;
+            margin: 10% auto;
+            color: #ffffffe7;
+            // font-size: 18px;
+            // line-height: 20px;
+            // margin-top: 20px;
+        }
+    }
+}
+@media screen and (min-width: 700px) {
+    .fact {
+        margin-top: 50px;
+        .fact-header {
+            h2 {
+                text-align: center;
+                color: rgba(0, 0, 0, 0.62);
+                
+            }
+        }
+        .fact-text {
+            // height: 40vh;
+            // background-image: url(../../Assets/bg1.png);
+            background-color: #4babca;
+            width: 100%;
+            p {
+                text-align: left;
+                width: 70%;
+                margin: 5% auto;
+                color: #ffffffe7;
+                // font-size: 18px;
+                // line-height: 23px;
+                // margin-top: 20px;
+            }
+        }
+    }
+}
+

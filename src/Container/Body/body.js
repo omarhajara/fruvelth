@@ -4,6 +4,8 @@ import Banner from '../../Component/Banner/banner';
 import Dashboard from '../Disease-dashboard/dashboard';
 import Hospital from '../Hospitals/hospital';
 import HospitalList from '../Hospitals/hospital-list';
+import Fact from '../../Component/Facts/facts';
+import Tips from '../../Component/P-Tips/p-tips'
 
 
 class Body extends Component {
@@ -13,6 +15,8 @@ class Body extends Component {
                 <Header/>
                 <Banner/>
                 <Dashboard/>
+                <Fact/>
+                <Tips/>
             </div>
         )
     }

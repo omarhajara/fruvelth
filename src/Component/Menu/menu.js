@@ -19,6 +19,7 @@ const Menu = ({ handleClose, show }) => {
                         <li onClick={handleClose}>Home</li>
                         <li onClick={handleClose}>About Us</li>
                         <li onClick={handleClose}>Contact Us</li>
+                        <li onClick={handleClose}>My Dashboard</li>
                     </ul>
             </div>
         </div>
