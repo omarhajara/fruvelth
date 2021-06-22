@@ -38,6 +38,7 @@ class Header extends Component {
                             <li>Home</li>
                             <li>About Us</li>
                             <li>Contact Us</li>
+                            <li>My Dashboard</li>
                         </ul>
                     </div>
                 </div>
