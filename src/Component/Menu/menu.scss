@@ -21,8 +21,8 @@
     position: fixed;
     left: 5px;
     top: 5px;
-    width: 95%;
-    margin-left: 2%;
+    width: 90%;
+    margin: 0 auto;
     padding-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width:40%;
+    width:30%;
     height: 235px;
     background: rgba(0, 0, 0, 0.90);
     z-index: 2;
@@ -62,11 +62,11 @@
         // margin: 10px;
     }
     ul {
-        // padding-top: 10px;
+        padding-top: 30px;
         li {
             z-index: 999;
             color: #fff;
-            padding-top: 20px;
+            padding-top: 15px;
             padding-left: 10px;
             border-bottom: 1px solid #3281A4;
         }
@@ -91,27 +91,18 @@
     .menu-text h2 {
         color: #3281A4;
         font-size: 28px;
-        // margin-left: 50%;
+        margin-left: 50%;
         span {
             color: #000000;
         }
     }
     .menu-links {
-        // margin-top: 10px;
+        margin-top: 10px;
         ul li{
             display: inline;
-            padding-top: 30px;
             padding-left: 40px;
             color: #3281A4;
             font-size: 18px;
         }
     }
-  }
-  .menu-container {
-      ul {
-          li {
-              padding-top: 20px;
-
-          }
-      }
   }
